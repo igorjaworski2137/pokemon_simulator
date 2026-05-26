@@ -13,7 +13,7 @@ func _unhandled_input(event):
 	if player_in_range and event.is_action_pressed("interact"):
 		if Global.all_types_collected.size() == 7:
 			print("Wygrana!")
-			get_tree().change_scene_to_file("res://scenes/start/startScene.tscn")
+			get_tree().change_scene_to_file("res://scenes/start/Finish.tscn")
 		else:
 			print("Przegrałes :(")
 			get_tree().quit()
