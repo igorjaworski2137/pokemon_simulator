@@ -1,0 +1,27 @@
+[
+  {
+	"name": "Npc1",
+	"text": "Hello traveler, the ocean currents are reacting strangely to you.",
+	"type":"water"
+  },
+  {
+	"name": "You",
+	"text": "Ocean currents? I don’t understand...",
+	"type":"water"
+  },
+  {
+	"name": "Npc1",
+	"text": "I can transform your essence into a Water-type, flowing and adaptable like the sea.",
+	"type":"water"
+  },
+  {
+	"name": "You",
+	"text": "That sounds... calming, but also a bit overwhelming.",
+	"type":"water"
+  },
+  {
+	"name": "Npc1",
+	"text": "Do you really want to change your type to Water?",
+	"type":"water"
+  }
+]

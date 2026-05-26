@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dcujyfr145jed"]
+
+[ext_resource type="Script" uid="uid://bgdum8r4thx02" path="res://scripts/npc.gd" id="1_yq5wv"]
+[ext_resource type="Texture2D" uid="uid://dieex2r1hb370" path="res://img/npc.png" id="2_3ak68"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_se8i8"]
+size = Vector2(32, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3n4k"]
+size = Vector2(32, 72)
+
+[node name="NPC" type="CharacterBody2D" unique_id=579969835]
+script = ExtResource("1_yq5wv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1350016538]
+position = Vector2(0, -24)
+scale = Vector2(0.8888889, 0.6875)
+texture = ExtResource("2_3ak68")
+hframes = 12
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=525873214]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_se8i8")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1978932665]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1671609002]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_i3n4k")

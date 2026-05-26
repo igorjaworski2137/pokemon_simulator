@@ -1,0 +1,27 @@
+[
+  {
+	"name": "Npc1",
+	"text": "Hello traveler! I can sense your aura is unstable.",
+	"type":"steel"
+  },
+  {
+	"name": "You",
+	"text": "What do you mean by unstable aura?",
+	"type":"steel"
+  },
+  {
+	"name": "Npc1",
+	"text": "I can help you transform it into a Steel-type aura, strong and unbreakable.",
+	"type":"steel"
+  },
+  {
+	"name": "You",
+	"text": "That sounds interesting...",
+	"type":"steel"
+  },
+  {
+	"name": "Npc1",
+	"text": "Do you really want to change your type to Steel?",
+	"type":"steel"
+  }
+]

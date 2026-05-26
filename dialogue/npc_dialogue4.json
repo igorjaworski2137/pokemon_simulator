@@ -1,0 +1,27 @@
+[
+  {
+	"name": "Npc1",
+	"text": "Traveler, the ground beneath you responds to your presence.",
+	"type":"ground"
+  },
+  {
+	"name": "You",
+	"text": "I don’t feel anything unusual.",
+	"type":"ground"
+  },
+  {
+	"name": "Npc1",
+	"text": "I can bind you to the earth and make you a Ground-type.",
+	"type":"ground"
+  },
+  {
+	"name": "You",
+	"text": "What does that even mean for me?",
+	"type":"ground"
+  },
+  {
+	"name": "Npc1",
+	"text": "Do you really want to change your type to Ground?",
+	"type":"ground"
+  }
+]

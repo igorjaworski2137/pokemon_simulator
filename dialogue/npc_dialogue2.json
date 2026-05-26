@@ -1,0 +1,27 @@
+[
+  {
+	"name": "Npc1",
+	"text": "Greetings! The forest spirits told me you are evolving.",
+	"type":"poison"
+  },
+  {
+	"name": "You",
+	"text": "Evolving? I didn’t feel anything.",
+	"type":"poison"
+  },
+  {
+	"name": "Npc1",
+	"text": "I can guide you into a Poison-type transformation, mastering toxins and shadows.",
+	"type":"poison"
+  },
+  {
+	"name": "You",
+	"text": "That sounds dangerous...",
+	"type":"poison"
+  },
+  {
+	"name": "Npc1",
+	"text": "Do you really want to change your type to Poison?",
+	"type":"poison"
+  }
+]

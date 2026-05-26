@@ -1,0 +1,27 @@
+[
+  {
+	"name": "Npc1",
+	"text": "Hey trainer! You’ve got a fiery spirit inside you.",
+	"type":"fire"
+  },
+  {
+	"name": "You",
+	"text": "Fiery spirit? I just feel normal.",
+	"type":"fire"
+  },
+  {
+	"name": "Npc1",
+	"text": "I can awaken it fully and turn you into a Fire-type.",
+	"type":"fire"
+  },
+  {
+	"name": "You",
+	"text": "That sounds powerful...",
+	"type":"fire"
+  },
+  {
+	"name": "Npc1",
+	"text": "Do you really want to change your type to Fire?",
+	"type":"fire"
+  }
+]

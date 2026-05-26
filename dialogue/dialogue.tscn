@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://0tc2yc30b0ub"]
+
+[ext_resource type="Texture2D" uid="uid://dcrbotl3a8tpt" path="res://img/background.png" id="1_k0ki1"]
+[ext_resource type="Script" uid="uid://drigu31dgsciw" path="res://scripts/dialogue.gd" id="1_vigd0"]
+
+[node name="Control" type="Control" unique_id=539662077]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vigd0")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=410397420]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -1.0
+offset_right = 1199.0
+offset_bottom = 598.0
+texture = ExtResource("1_k0ki1")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect" unique_id=37726104]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 23.0
+offset_right = 450.0
+offset_bottom = 200.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 40
+text = "Name
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Text" type="RichTextLabel" parent="NinePatchRect" unique_id=1513199693]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 176.0
+offset_right = 618.0
+offset_bottom = 458.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 30
+text = "Text
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Current" type="RichTextLabel" parent="NinePatchRect" unique_id=115031236]
+layout_mode = 0
+offset_left = 741.0
+offset_top = 81.0
+offset_right = 957.0
+offset_bottom = 121.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+text = "Current type"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="New" type="RichTextLabel" parent="NinePatchRect" unique_id=132351525]
+layout_mode = 0
+offset_left = 743.0
+offset_top = 277.0
+offset_right = 959.0
+offset_bottom = 317.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+text = "New type"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ChangeType" type="Button" parent="NinePatchRect" unique_id=1063743211]
+layout_mode = 0
+offset_left = 707.0
+offset_top = 142.0
+offset_right = 995.0
+offset_bottom = 258.0
+theme_override_font_sizes/font_size = 24
+text = "Change Type"
+
+[node name="Quit" type="Button" parent="NinePatchRect" unique_id=242649976]
+layout_mode = 0
+offset_left = 707.0
+offset_top = 335.0
+offset_right = 997.0
+offset_bottom = 451.0
+theme_override_font_sizes/font_size = 24
+text = "Quit"
+
+[connection signal="pressed" from="NinePatchRect/ChangeType" to="." method="_on_change_type_pressed"]
+[connection signal="pressed" from="NinePatchRect/Quit" to="." method="_on_quit_pressed"]

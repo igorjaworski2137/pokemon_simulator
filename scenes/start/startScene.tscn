@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://ctsp1mjq5yqmw"]
+
+[ext_resource type="Script" uid="uid://1etbnepvbsl5" path="res://scripts/mainmenu.gd" id="1_y410h"]
+[ext_resource type="Texture2D" uid="uid://cgi1l8wnkh48b" path="res://img/start.png" id="2_jfrku"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4p8ws"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7lf5q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3fpx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lteji"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8tgco"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mjsco"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_um6ta"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ifnvk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nyh2l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k4j1w"]
+
+[node name="Main Scene" type="Node2D" unique_id=76897424]
+script = ExtResource("1_y410h")
+
+[node name="Back" type="Sprite2D" parent="." unique_id=1788736467]
+position = Vector2(598.25006, 303.5)
+scale = Vector2(0.61556125, 0.5731482)
+texture = ExtResource("2_jfrku")
+
+[node name="Buttons" type="Control" parent="." unique_id=2105067696]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start" type="Button" parent="Buttons" unique_id=2038380577]
+layout_mode = 0
+offset_left = 482.0
+offset_top = 133.0
+offset_right = 718.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4p8ws")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7lf5q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_x3fpx")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_lteji")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8tgco")
+text = "Start
+"
+
+[node name="Quit" type="Button" parent="Buttons" unique_id=1174917326]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 266.0
+offset_right = 705.0
+offset_bottom = 328.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mjsco")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_um6ta")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ifnvk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nyh2l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k4j1w")
+text = "Quit
+"
+
+[connection signal="pressed" from="Buttons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Buttons/Quit" to="." method="_on_quit_pressed"]

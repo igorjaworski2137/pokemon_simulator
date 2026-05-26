@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cb6u2t16ugek4"]
+
+[ext_resource type="Script" uid="uid://1etbnepvbsl5" path="res://scripts/mainmenu.gd" id="1_upf1t"]
+[ext_resource type="Texture2D" uid="uid://dt43yxwsd8pqw" path="res://img/back.png" id="2_lroq2"]
+
+[node name="Main Scene" type="Node2D" unique_id=76897424]
+script = ExtResource("1_upf1t")
+
+[node name="Back" type="Sprite2D" parent="." unique_id=1788736467]
+position = Vector2(598.25006, 303.5)
+scale = Vector2(0.61556125, 0.5731482)
+texture = ExtResource("2_lroq2")
+
+[node name="Buttons" type="Control" parent="." unique_id=2105067696]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Quit" type="Button" parent="Buttons" unique_id=1174917326]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 265.0
+offset_right = 585.0
+offset_bottom = 493.0
+text = "Quit
+"
+
+[node name="Label" type="Label" parent="." unique_id=406902971]
+offset_left = 160.0
+offset_top = 66.0
+offset_right = 1017.0
+offset_bottom = 153.0
+theme_override_font_sizes/font_size = 64
+text = "Wygrałeś!!!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Buttons/Quit" to="." method="_on_quit_pressed"]

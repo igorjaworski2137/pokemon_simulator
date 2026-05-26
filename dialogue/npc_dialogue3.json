@@ -1,0 +1,27 @@
+[
+  {
+	"name": "Npc1",
+	"text": "Hello! I’ve studied your psychic energy for a long time.",
+	"type":"psychic"
+  },
+  {
+	"name": "You",
+	"text": "You’ve been watching me?",
+	"type":"psychic"
+  },
+  {
+	"name": "Npc1",
+	"text": "Yes, and I can unlock your potential into a Psychic-type being.",
+	"type":"psychic"
+  },
+  {
+	"name": "You",
+	"text": "What would that change about me?",
+	"type":"psychic"
+  },
+  {
+	"name": "Npc1",
+	"text": "Do you really want to change your type to Psychic?",
+	"type":"psychic"
+  }
+]

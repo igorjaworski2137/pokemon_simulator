@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://d25rplowcwcja"]
+
+[ext_resource type="Script" uid="uid://bcjnwpyrafnax" path="res://scripts/fightnpc.gd" id="1_jxd06"]
+[ext_resource type="Texture2D" uid="uid://ckkjifv728e27" path="res://img/npcleader.png" id="1_xd1rx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jxd06"]
+size = Vector2(48, 52)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u4roj"]
+size = Vector2(90, 105)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xiy3j"]
+size = Vector2(55, 239.5)
+
+[node name="npc" type="CharacterBody2D" unique_id=251519553]
+script = ExtResource("1_jxd06")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=552583231]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_jxd06")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1925422341]
+position = Vector2(0.44444445, -15.5)
+scale = Vector2(3, 2.34)
+texture = ExtResource("1_xd1rx")
+hframes = 31
+vframes = 15
+frame = 2
+
+[node name="InteractionZone" type="Area2D" parent="." unique_id=1523444143]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone" unique_id=1437832950]
+position = Vector2(3, 5.5)
+shape = SubResource("RectangleShape2D_u4roj")
+
+[node name="Bariera" type="StaticBody2D" parent="." unique_id=117030627]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariera" unique_id=673639065]
+position = Vector2(75, 23.25)
+shape = SubResource("RectangleShape2D_xiy3j")
+
+[connection signal="body_entered" from="InteractionZone" to="." method="_on_interaction_zone_body_entered"]

@@ -1,0 +1,27 @@
+[
+  {
+	"name": "Npc1",
+	"text": "Hey! I felt a surge of electricity when you arrived.",
+	"type":"electric"
+  },
+  {
+	"name": "You",
+	"text": "Electricity? Is that even possible?",
+	"type":"electric"
+  },
+  {
+	"name": "Npc1",
+	"text": "It is. I can convert your energy into an Electric-type, fast and full of power.",
+	"type":"electric"
+  },
+  {
+	"name": "You",
+	"text": "That sounds intense...",
+	"type":"electric"
+  },
+  {
+	"name": "Npc1",
+	"text": "Do you really want to change your type to Electric?",
+	"type":"electric"
+  }
+]
