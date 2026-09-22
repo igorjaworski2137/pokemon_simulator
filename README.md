@@ -27,7 +27,7 @@ This repository contains:
 2. Clone this repository:
 
 ```bash
-git clone https://github.com/username/Pokemon_Simulator.git
+git clone https://github.com/igorjaworski2137/Pokemon_Simulator.git
 
 ```
 
